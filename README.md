@@ -16,6 +16,12 @@ While you are free to store outgoing messages in-memory, please use the below AP
 
 If you have time, feel free to add creative extensions, such as fuzzy searching (of conversation names or message contents), persisting new outoging messages, rich-text composing, handling new realtime incoming messages, or anything else you can think of!
 
+## API
+
+Some questions will depend on an endpoint served by [Karuna's](https://meetkaruna.com) coding challenge API. You can access this API at `https://sec.meetkaruna.com/api/v1`.
+
+Most endpoints can be paginated using the `page` and `per_page` query params, which default to `0` and `10` respectively.
+
 #### `GET /conversations`
 
 This endpoint returns a list of conversations, which include the name of the other party, and an ID. You can use this ID to fetch the messages of a given conversation, as below.
